@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Deploy to NPM
 
 on:
@@ -37,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build-artifact
-          path: build
+          path: . 
 
   publish:
     runs-on: ubuntu-latest
