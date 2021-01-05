@@ -31,6 +31,10 @@ jobs:
       - name: Building artifacts...
         run: npm run build
 
+      # Avoid uploading node_modules as a part of artifact
+      - name: Check out node_modules
+        run: rm -rf node_modules/
+
       - name: Uploading artifacts...
         uses: actions/upload-artifact@v2
         with:
