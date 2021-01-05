@@ -1,7 +1,7 @@
 {
   "name": "steam-miniprofile",
   "version": "0.0.1",
-  "description": "",
+  "description": "Fetches miniprofile data on any steam user",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/HilliamT/node-steam-miniprofile.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Mengh.",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/HilliamT/node-steam-miniprofile/issues"
   },
