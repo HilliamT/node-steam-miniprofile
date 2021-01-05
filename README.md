@@ -1,7 +1,5 @@
 # node-steam-miniprofile
-<img src="https://badgen.net/npm/v/steam-miniprofile" />
-<img src="https://badgen.net/npm/dm/steam-miniprofile" />
-<img src="https://badgen.net/npm/dt/steam-miniprofile" />
+<img src="https://badgen.net/npm/v/steam-miniprofile" /> <img src="https://badgen.net/npm/dm/steam-miniprofile" /> <img src="https://badgen.net/npm/dt/steam-miniprofile" />
 
 
 Fetches miniprofile data on any steam user, providing a wrapper around the `https://steamcommunity.com/miniprofile/<ACCOUNT_NAME>/json` endpoint.
