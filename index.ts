@@ -26,7 +26,9 @@ interface Miniprofile {
  * @param accountid AccountID (steamid3) of the user to fetch for
  */
 export async function getMiniprofile(accountid: string): Promise<Miniprofile> {
-    return (await axios.get(`http://steamcommunity.com/miniprofile/${accountid}/json`)).data;
+    return (await axios.get(`https://cors-anywhere.herokuapp.com/http://steamcommunity.com/miniprofile/${accountid}/json`, {
+        headers: { "X-Requested-With": "XMLHttpRequest" }
+    })).data;
 }
 
 /**
