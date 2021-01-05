@@ -1,6 +1,6 @@
 {
   "name": "steam-miniprofile",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Fetches miniprofile data on any steam user",
   "main": "index.js",
   "scripts": {
