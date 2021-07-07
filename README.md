@@ -7,7 +7,9 @@ Fetches miniprofile data on any steam user, providing a wrapper around the `http
 ### Installation
 You can download this from npm using the following command.
 
-    npm install steam-miniprofile
+```bash
+npm install steam-miniprofile
+```
 
 ### Usage
 
@@ -15,7 +17,7 @@ This module exports two functions, `getMiniprofile` and `getMiniprofileByID64` w
 
 ##### Example
 
-```
+```typescript
 const accountid = "120816906";
 const steamid64 = "76561198081082634";
 ...
@@ -30,6 +32,8 @@ console.log(level);
 ### Miniprofile
 The interface `Miniprofile` can be found below.
 
+```typescript
+interface MiniProfile {
     level: number;
     level_class: string; // Determines badge
     avatar_url: string; // Full image url
@@ -48,4 +52,5 @@ The interface `Miniprofile` can be found below.
         image: string; 
     },
     avatar_frame?: string;
-
+}
+```
