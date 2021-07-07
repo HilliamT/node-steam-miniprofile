@@ -11,6 +11,41 @@ You can download this from npm using the following command.
 
 ### Usage
 
-This module exports two functions, `getMiniprofile` and `getMiniprofileByID64`. 
+This module exports two functions, `getMiniprofile` and `getMiniprofileByID64` which both return a Promise that resolves to a `Miniprofile`.
 
-Given an `accountid` or a `steamid64` respectively, a promisifed `Miniprofile` object will be returned. The fields for this object can be found as a part of the `Miniprofile` inferface definition within the `index` file.
+##### Example
+
+```
+const accountid = "120816906";
+const steamid64 = "76561198081082634";
+...
+const miniprofile = await getMiniprofile(accountid);
+console.log(miniprofile.level);
+...
+const { level, ... } = await getMiniprofileByID64(steamid64);
+console.log(level);
+...
+```
+
+### Miniprofile
+The interface `Miniprofile` can be found below.
+
+    level: number;
+    level_class: string; // Determines badge
+    avatar_url: string; // Full image url
+    persona_name: string; // Current display name
+
+    favorite_badge?: {
+        name: string;
+        xp: string;
+        level: number;
+        description: string;
+        icon: string;
+    },
+    profile_background?: {
+        "video/webm": string;
+        "video/mp4": string;
+        image: string; 
+    },
+    avatar_frame?: string;
+
